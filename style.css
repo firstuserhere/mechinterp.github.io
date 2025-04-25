@@ -63,10 +63,11 @@ p + p {
 }
 
 .contact-footer p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.4;
   text-align: center;
   margin-bottom: 0;
+  color: #777;
 }
 
 .contact-footer a {
