@@ -7,12 +7,22 @@ body {
   background-color: #fff;
   font-size: 16px;
   font-weight: 400; /* Normal font weight */
+  min-height: 100vh; /* Full viewport height */
 }
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   max-width: 720px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
+  flex: 1;
 }
+
 h1 {
   font-size: 2.3rem;
   font-weight: 600;
@@ -21,37 +31,53 @@ h1 {
   line-height: 1.3;
   text-align: center;
 }
+
 p {
   font-size: 1.05rem;
   margin-bottom: 1.25rem;
   line-height: 1.7;
   font-weight: 400; /* Normal font weight for paragraphs */
 }
+
 a {
   color: #0000EE;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 /* Add spacing between major content sections */
 p + p {
   margin-top: 0.9rem;
 }
+
 .contact-footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
+  margin-top: auto;
+  padding: 1.5rem 0;
   border-top: 1px solid #eee;
   font-size: 0.9rem;
   color: #555;
+  width: 100%;
 }
+
 .contact-footer p {
   font-size: 0.9rem;
   line-height: 1.4;
+  text-align: center;
+  margin-bottom: 0;
 }
+
 .contact-footer a {
   color: #555;
 }
+
 .contact-footer a:hover {
   color: #000;
+}
+
+.contact-footer .container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
